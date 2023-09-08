@@ -1,5 +1,10 @@
-body {
-    background-color: #242628;
+body{
+    background-color: #221d1d;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
  /* Navbar */
@@ -44,6 +49,9 @@ nav {
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .mainpicture {
@@ -51,10 +59,23 @@ nav {
     height:500px;
 }
 
+/* Experience */
+#Experience {
+    text-align: center;
+}
+    
+#listofex {
+    display: flex;
+}
+
 /* Portofolio */
 
-.Project {
-    display: inline;
+.Portofolio {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 #Myportofolio {
@@ -64,5 +85,15 @@ nav {
 }
 
 .boxPortofolio{
-   display: flex;
+   width: 300px;
+   height: 300px;
+   display: inline;
+   background-color: #ab9e9e;
+   margin-left: 100px;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.boxPortofolio:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
