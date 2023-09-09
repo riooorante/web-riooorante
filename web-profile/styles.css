@@ -1,41 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap');
+
 body{
-    background-color: #221d1d;
+    background-color: #000000;
     box-sizing: border-box;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 .container{
     padding: 10px;
     margin-bottom: 20px;
+    margin-top: 150px;
 }
 
  /* Navbar */
-nav {
-     padding: 10px 0;
-}
-
 .navcontainer {
+    position: fixed;
+    top: 0;
     margin: 0;
-    color: #fff;
+    color: #fbfbfb;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
+    background-color: #000000;
+    width: 100%
 }
 
 .menu li{
     margin-right: 20px;
+    font-size: 30px;
 }
 
 .menu li:last-child{
-    margin-right: 0;
+    margin-right: 100px;
 }
 
 .mainTitle {
     font-size: 50px;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 .menu {
     list-style: none;
-    display: flex;
+    display: none;
 }
 
 .menu li {
@@ -43,16 +53,57 @@ nav {
 }
 
 /* Main Content */
+.wrapper1 {
+    background-color: #000000;
+    display: flex;
+    height: 950px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
 
+
+.name {
+    font-size: 50px;
+    color: #fffefe;
+    padding-left: 150px;
+}
+
+.mainpicture {
+    margin: 0;
+}
 .wrapper {
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    padding: 120px;
 }
+
+.profile {
+    padding-left: 50px;
+    font-size: 30px;
+    color: white;
+}
+
+.wrapper-col {
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+ 
+
+}
+ 
 
 .mainpicture {
     width: 500px;
@@ -66,34 +117,58 @@ nav {
     
 #listofex {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: white;
 }
 
 /* Portofolio */
 
 .Portofolio {
     display: flex;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+    
 }
 
 #Myportofolio {
     text-align: center;
     align-items: center;
     display: block;
+    color: white;
 }
 
 .boxPortofolio{
    width: 300px;
    height: 300px;
    display: inline;
-   background-color: #ab9e9e;
-   margin-left: 100px;
+   text-align: center;
+   background-color: #d57908;
    padding: 20px;
    border-radius: 10px;
 }
 
+.boximage {
+    height: 150px;
+    padding: 20px;
+}
+
 .boxPortofolio:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(238, 200, 142, 0.5);
+}
+
+@media screen and (min-width: 900px) {
+    .mainTitle {
+        text-align: left;
+    }
+
+    .menu { 
+        display: flex;
+    }
 }
